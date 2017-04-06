@@ -1,5 +1,9 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
-export default () => (<div />)
+import App from './components'
 
-console.log('foo')
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
