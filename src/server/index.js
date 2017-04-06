@@ -3,7 +3,7 @@ import Koa from 'koa'
 
 const app = new Koa()
 
-const server = createServer(app)
+const server = createServer(app.callback())
 
 const PORT = process.env.PORT || 3000
 server.listen(PORT, () => {

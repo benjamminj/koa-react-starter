@@ -25,6 +25,9 @@
     "husky": "^0.13.3",
     "scripty": "^1.7.1"
   },
+  "scripty": {
+    "silent": true
+  },
   "scripts": {
     "dev": "scripty",
     "lint": "eslint src/**/*.js",
