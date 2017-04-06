@@ -10,6 +10,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "ava": "^0.19.0",
     "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
@@ -33,10 +34,16 @@
   "scripty": {
     "silent": true
   },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
   "scripts": {
     "dev": "scripty",
     "lint": "eslint src",
     "precommit": "npm run lint",
-    "build": "webpack --config webpack/config.base.babel.js"
+    "build": "webpack --config webpack/config.base.babel.js",
+    "test": "ava"
   }
 }
