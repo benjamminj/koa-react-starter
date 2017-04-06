@@ -4,3 +4,6 @@ node_modules
 # productivity
 *.todo*
 *.notes*
+
+# logs
+npm-debug.log
