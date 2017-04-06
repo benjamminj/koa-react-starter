@@ -3,5 +3,23 @@
   "version": "0.1.0",
   "main": "index.js",
   "author": "Benjamin Johnson <benjamin.d.johnson@icloud.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.1.0",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^3.0.0"
+  },
+  "scripts": {
+    "lint": "eslint *.js"
+  }
 }
