@@ -1,0 +1,7 @@
+{
+  "name": "koa-react",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Benjamin Johnson <benjamin.d.johnson@icloud.com>",
+  "license": "MIT"
+}
