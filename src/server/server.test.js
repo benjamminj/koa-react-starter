@@ -5,15 +5,17 @@ test.beforeEach(t => {
   delete require.cache[require.resolve('./server')]
 })
 
-test('should listen to `process.env.PORT`', t => {
-  process.env.PORT = 5000
+const testPort = (t, port) => {
+  let expected = 3000 // default port
+
+  if (port) {
+    process.env.PORT = port
+    expected = port
+  }
+
   const { server } = require('./server')
+  t.is(server.address().port, expected)
+}
 
-  t.is(server.address().port.toString(), process.env.PORT)
-})
-
-test('should default to port 3000 if no port is specified', t => {
-  const { server } = require('./server')
-
-  t.is(server.address().port, 3000)
-})
+test('should listen to `process.env.PORT` if set', testPort, 5000)
+test('should default to port 3000 if no port is specified', testPort)
