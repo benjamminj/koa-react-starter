@@ -21,10 +21,12 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
-    "eslint-plugin-standard": "^3.0.0"
+    "eslint-plugin-standard": "^3.0.0",
+    "husky": "^0.13.3"
   },
   "scripts": {
     "dev": "scripty",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "precommit": "npm run lint"
   }
 }
