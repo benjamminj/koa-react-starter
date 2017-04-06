@@ -22,7 +22,8 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-standard": "^3.0.0",
-    "husky": "^0.13.3"
+    "husky": "^0.13.3",
+    "scripty": "^1.7.1"
   },
   "scripts": {
     "dev": "scripty",
