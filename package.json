@@ -30,7 +30,7 @@
   },
   "scripts": {
     "dev": "scripty",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint src",
     "precommit": "npm run lint"
   }
 }
