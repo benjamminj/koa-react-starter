@@ -1,7 +1,9 @@
 import React from 'react'
 
+import Header from './Header'
+
 const App = () => (
-  <h1>This is real life?</h1>
+  <Header />
 )
 
 export default App
