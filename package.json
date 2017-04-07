@@ -8,8 +8,11 @@
     "koa": "^2.2.0",
     "koa-mount": "^3.0.0",
     "koa-static": "^3.0.0",
+    "polished": "^1.0.2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "sanitize.css": "^5.0.0",
+    "styled-components": "^1.4.4"
   },
   "devDependencies": {
     "ava": "^0.19.0",
