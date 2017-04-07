@@ -1,19 +1,18 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import path from 'path'
 
-const root = process.cwd()
-const src = path.join(root, 'src')
-const client = path.join(src, 'client')
-const dist = path.join(root, 'dist')
+// Get file paths from `utils` in root directory.
+import { filePaths } from '~/utils'
+const { distClient, src, srcClient } = filePaths
 
 export default {
   context: src,
   entry: {
-    app: path.join(client, 'index.js')
+    app: path.join(srcClient, 'index.js')
   },
   output: {
     filename: '[name].js',
-    path: path.join(dist, 'assets'),
+    path: path.join(distClient, 'assets'),
     publicPath: '/assets/'
   },
   module: {
@@ -32,8 +31,8 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       title: process.env.TITLE || 'Koa | React',
-      template: path.join(client, 'template.html'),
-      filename: path.join(dist, 'index.html')
+      template: path.join(srcClient, 'template.html'),
+      filename: path.join(distClient, 'index.html')
     })
   ]
 }

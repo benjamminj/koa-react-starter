@@ -5,5 +5,12 @@
         "node": true
       }
     }]
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "~": "."
+      }
+    }]
   ]
 }
