@@ -21,6 +21,6 @@ test(
 test('should render styled component',
   testWithWrapper,
   (t, wrapper) => {
-    t.is(wrapper.name(), 'styled')
+    t.is(wrapper.name(), 'styled.header')
   }
 )
