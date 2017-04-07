@@ -54,7 +54,7 @@
     "dev": "scripty",
     "lint": "eslint src",
     "precommit": "npm run lint",
-    "build": "webpack --config webpack/config.base.babel.js",
+    "build": "scripty",
     "test": "ava",
     "cov": "nyc npm test"
   }
