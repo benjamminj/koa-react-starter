@@ -55,6 +55,7 @@
   },
   "scripts": {
     "dev": "scripty",
+    "start": "node dist/server",
     "lint": "eslint src",
     "precommit": "npm run lint",
     "prepush": "npm test",
