@@ -59,8 +59,9 @@
     "lint": "eslint src",
     "precommit": "npm run lint",
     "prepush": "npm test",
-    "build": "scripty",
-    "build:server": "babel src/server build/server",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "scripty",
+    "build:server": "scripty",
     "test": "ava",
     "cov": "nyc npm test"
   }
