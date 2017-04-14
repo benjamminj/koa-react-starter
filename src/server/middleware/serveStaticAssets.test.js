@@ -17,5 +17,5 @@ test('should call serve on the dist directory', t => {
   serveStaticAssets(app)
   t.true(app.use.calledOnce)
   t.true(serve.calledOnce)
-  t.regex(serve.firstCall.args[0], /dist$/)
+  t.regex(serve.firstCall.args[0], /client$/)
 })
