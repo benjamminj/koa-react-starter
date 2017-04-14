@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - "node"
+- node
+deploy:
+  provider: heroku
+  app: bjohnson-koa-react
+  on: staging
+  skip_cleanup: true
+  api_key:
+    secure: sdR/IRYs98BRNsIRnCs/spHuAlUontXaeWxHzVMA+Vxlph/MraUx+1iefxqOYA9saGuCx8n7PEt9RHsP4YOFYKPjdhR4Jos8EYxlP+HqhiVSM2D+G49CEj26jfgFiqkpJE7s37gV3pILjJXu+eOXkQL7j48X2wEL0uw8rZiUV4WSd6ll0BeNCGZMn/9JPHXCQ3L9kOOjmoHMhagEEx5rFiqk1uK9s6xAamqray3qLHyBzXBVDn571kswsRRyIJ2ABkW6RalH9YqEJcEr/2zwzlDbbPPe08IDiPVfTpAI20jhJ54FICo8OUvKdwGBtOaV9zcR+azCWIOa+Q9sxAaz/hFHHCiN9HZ64kvkNzXJQpN86c0rpsMHoPdGBdpYzGhQrajfuaMyklKshf+sbH1NzylSZQ1pPcd+b9cuzg/6CWuYcX9idakhTTjDk2td/3RObUei4pPqfWHJUu3RfyYLrffiWdFcoaChS6+Yd2AxR+Bsp/540HMjqFSC6Fzcc2N0X9ivya8S4wiga5+0GzQTjFKeOQJ/51tC2/eQ1M7WAeK9xWmZDLVgpTpy0TTbtL/7OtS1g2pNE+F4ApgP+wuHQ2WLEx8ubS6Zb4vjVcygnmsw9aTVJgqTHQtyEJZfImVXMjlXBo3bWnvZ2fKyFp4hAdeZoTeuSwKcJTFVLthTACQ=
