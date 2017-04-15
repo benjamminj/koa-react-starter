@@ -36,6 +36,7 @@
     "eslint-plugin-standard": "^3.0.0",
     "html-webpack-plugin": "^2.28.0",
     "husky": "^0.13.3",
+    "npm-run-all": "^4.0.2",
     "nyc": "^10.2.0",
     "proxyquire": "^1.7.11",
     "react-addons-test-utils": "^15.4.2",
@@ -59,9 +60,10 @@
     "lint": "eslint src",
     "precommit": "npm run lint",
     "prepush": "npm test",
-    "build": "npm run build:client && npm run build:server",
+    "build": "run-p build:*",
     "build:client": "scripty",
     "build:server": "scripty",
+    "build:utils": "scripty",
     "test": "ava",
     "cov": "nyc npm test"
   }
